@@ -52,14 +52,20 @@ namespace Car_Dealer_v2._0
         {
             //Här hamnar vi om man klickar på något i listboxen
             //eller ändrar position/markerad i listboxen
-
+            listBox2.Items.Clear();
             ListBox myListofCars = sender as ListBox;
 
             //MessageBox.Show(myListofCars.SelectedItem.GetType().ToString());
 
             Car mySelectedCar = myListofCars.SelectedItem as Car;
 
-            MessageBox.Show($"Your {mySelectedCar.Color} {mySelectedCar.Make} Costs: {mySelectedCar.Price} ");
+            listBox2.Items.Add($"{mySelectedCar.Color}, {mySelectedCar.Make}, {mySelectedCar.Price}Kr, ID: {mySelectedCar.Id} ");
+        }
+
+
+        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

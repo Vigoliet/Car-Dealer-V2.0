@@ -3,4 +3,4 @@
 Task 1: Print all Cars to listbox (Make, Model), 
 		when selecting Car show (Km, Color, Price)
 
-Task 2: 
+Task 2: Combo Box --> Choose color --> Show Cars with that color (listbox) -->
