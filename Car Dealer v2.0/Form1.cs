@@ -47,7 +47,6 @@ namespace Car_Dealer_v2._0
                 listBox1.Items.Add(anka);
             }
         }
-
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //Här hamnar vi om man klickar på något i listboxen
@@ -59,7 +58,10 @@ namespace Car_Dealer_v2._0
 
             Car mySelectedCar = myListofCars.SelectedItem as Car;
 
-            listBox2.Items.Add($"{mySelectedCar.Color}, {mySelectedCar.Make}, {mySelectedCar.Price}Kr, ID: {mySelectedCar.Id} ");
+            listBox2.Items.Add($"Make: {mySelectedCar.Make}");
+            listBox2.Items.Add($"Color: {mySelectedCar.Color} ");
+            listBox2.Items.Add($"Price: {mySelectedCar.Price}Kr");
+            listBox2.Items.Add($"ID: {mySelectedCar.Id}");
         }
 
 
