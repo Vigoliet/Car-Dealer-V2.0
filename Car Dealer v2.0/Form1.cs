@@ -41,6 +41,17 @@ namespace Car_Dealer_v2._0
             Cars.Add(new Car() { Id = 801, Make = "Audi", Model = "A7", Color = "White", Km = 492, Price = 187500, Year = 2002 });
             Cars.Add(new Car() { Id = 6031, Make = "Audi", Model = "A6", Color = "Blue", Km = 553, Price = 55400, Year = 2011 });
 
+            int i = Cars.Select(x => x.Color).Distinct().Count(); 
+            var CarColors = Cars.Select(x => x.Color).Distinct();
+
+            //MessageBox.Show(CarColors.GetType().ToString());
+
+            foreach (var item in CarColors)
+            {
+                listBox3.Items.Add(item);
+            }
+            label1.Text = $"Vi erbjuder bilar i {i} olika färger";
+
             foreach (Car anka in Cars.OrderBy(x => x.Make))
             {
                 //listBox1.Items.Add($"{anka.Make} {anka.Model}");
@@ -64,10 +75,18 @@ namespace Car_Dealer_v2._0
             listBox2.Items.Add($"ID: {mySelectedCar.Id}");
         }
 
-
-        private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
         {
+            listBox4.Items.Clear();
+            //Visa antal bilar i vald färg
 
+            string SelectedColor = (sender as ListBox).SelectedItem as String;
+            
+            var i = Cars.FindAll(x => x.Color == SelectedColor);
+            foreach (var item in i)
+            {
+                listBox4.Items.Add($"{item}");
+            }
         }
     }
 }
