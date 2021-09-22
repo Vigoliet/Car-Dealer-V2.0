@@ -50,35 +50,38 @@ namespace Car_Dealer_v2._0
             {
                 listBox3.Items.Add(item);
             }
-            label1.Text = $"Vi erbjuder bilar i {i} olika färger";
+            label1.Text = $"We offer {i} different colors";
 
-            foreach (Car anka in Cars.OrderBy(x => x.Make))
+            foreach (Car anka in Cars.OrderBy(x => x.Make)) //anka can be any variable name
             {
-                //listBox1.Items.Add($"{anka.Make} {anka.Model}");
+                //listBox1.Items.Add($"{anka.Make} {anka.Model}"); from Car class
                 listBox1.Items.Add(anka);
             }
         }
-        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e) //event when we press an item in listbox1
         {
-            //Här hamnar vi om man klickar på något i listboxen
-            //eller ändrar position/markerad i listboxen
-            listBox2.Items.Clear();
+            
+            
+            listBox2.Items.Clear(); //removes all items in listbox2
             ListBox myListofCars = sender as ListBox;
 
             //MessageBox.Show(myListofCars.SelectedItem.GetType().ToString());
 
             Car mySelectedCar = myListofCars.SelectedItem as Car;
 
-            listBox2.Items.Add($"Make: {mySelectedCar.Make}");
+            //we make it on multiple rows to make it jump down,
+            //could also have put everything on the same row,
+            //with listBox2.Items.Add($"Make: {} {} {} {}"); 
+            listBox2.Items.Add($"Make: {mySelectedCar.Make}"); 
             listBox2.Items.Add($"Color: {mySelectedCar.Color} ");
             listBox2.Items.Add($"Price: {mySelectedCar.Price}Kr");
             listBox2.Items.Add($"ID: {mySelectedCar.Id}");
         }
 
-        private void listBox3_SelectedIndexChanged(object sender, EventArgs e)
+        private void listBox3_SelectedIndexChanged(object sender, EventArgs e) //event when we press an item in listbox3
         {
-            listBox4.Items.Clear();
-            //Visa antal bilar i vald färg
+            listBox4.Items.Clear(); //removes all items in listbox4
+            
 
             string SelectedColor = (sender as ListBox).SelectedItem as String;
             
