@@ -84,7 +84,7 @@ namespace Car_Dealer_v2._0
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.35F);
-            this.label1.Location = new System.Drawing.Point(369, 22);
+            this.label1.Location = new System.Drawing.Point(354, 22);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 3;
@@ -109,7 +109,7 @@ namespace Car_Dealer_v2._0
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(183, 328);
+            this.btnEdit.Location = new System.Drawing.Point(183, 341);
             this.btnEdit.Margin = new System.Windows.Forms.Padding(2);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.Size = new System.Drawing.Size(79, 49);
@@ -120,7 +120,7 @@ namespace Car_Dealer_v2._0
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(183, 438);
+            this.btnSave.Location = new System.Drawing.Point(183, 453);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
             this.btnSave.Size = new System.Drawing.Size(79, 49);
@@ -164,7 +164,7 @@ namespace Car_Dealer_v2._0
             // 
             // btnRemove
             // 
-            this.btnRemove.Location = new System.Drawing.Point(183, 381);
+            this.btnRemove.Location = new System.Drawing.Point(183, 395);
             this.btnRemove.Margin = new System.Windows.Forms.Padding(2);
             this.btnRemove.Name = "btnRemove";
             this.btnRemove.Size = new System.Drawing.Size(79, 49);
@@ -175,7 +175,7 @@ namespace Car_Dealer_v2._0
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(543, 468);
+            this.btnAdd.Location = new System.Drawing.Point(564, 410);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
             this.btnAdd.Size = new System.Drawing.Size(101, 63);
@@ -210,9 +210,9 @@ namespace Car_Dealer_v2._0
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.35F);
             this.label2.Location = new System.Drawing.Point(518, 22);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(105, 15);
+            this.label2.Size = new System.Drawing.Size(111, 15);
             this.label2.TabIndex = 18;
-            this.label2.Text = "Car with thar color";
+            this.label2.Text = "Cars with thar color";
             // 
             // textBox1
             // 
@@ -225,7 +225,7 @@ namespace Car_Dealer_v2._0
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(397, 346);
+            this.label4.Location = new System.Drawing.Point(397, 349);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 13);
             this.label4.TabIndex = 20;

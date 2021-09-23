@@ -50,7 +50,7 @@ namespace Car_Dealer_v2._0
             {
                 listBox3.Items.Add(item);
             }
-            label1.Text = $"We offer {i} these colors:";
+            label1.Text = $"We offer these {i} colors:";
 
             NewMethod();
         }
