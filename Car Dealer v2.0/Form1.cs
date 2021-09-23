@@ -50,7 +50,7 @@ namespace Car_Dealer_v2._0
             {
                 listBox3.Items.Add(item);
             }
-            label1.Text = $"We offer {i} different colors";
+            label1.Text = $"We offer {i} these colors:";
 
             foreach (Car anka in Cars.OrderBy(x => x.Make)) //anka can be any variable name
             {
@@ -114,6 +114,25 @@ namespace Car_Dealer_v2._0
 
             listBox2.Items.Add($"New Price: {Price}");
             listBox2.Items.Add($"New Km: {Km}");
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            Cars.RemoveAt(SelectedCar());
+            listBox1.Items.Clear();
+            foreach (Car anka in Cars.OrderBy(x => x.Make)) //anka can be any variable name
+            {
+                listBox1.Items.Add(anka);
+            }
+            
+        }
+        public int SelectedCar() //Used to declare what car the user wants removed.
+        {
+            return Cars.FindIndex(x => x.Id == int.Parse(textBoxId.Text));
+        }
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

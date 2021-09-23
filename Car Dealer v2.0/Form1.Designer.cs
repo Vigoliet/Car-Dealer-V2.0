@@ -40,67 +40,60 @@ namespace Car_Dealer_v2._0
             this.textBoxKm = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.btnRemove = new System.Windows.Forms.Button();
+            this.btnAdd = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 16;
-            this.listBox1.Location = new System.Drawing.Point(0, 13);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox1.Location = new System.Drawing.Point(0, 48);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(133, 308);
+            this.listBox1.Size = new System.Drawing.Size(101, 251);
             this.listBox1.TabIndex = 0;
             this.listBox1.SelectedIndexChanged += new System.EventHandler(this.listBox1_SelectedIndexChanged);
             // 
             // listBox2
             // 
             this.listBox2.FormattingEnabled = true;
-            this.listBox2.ItemHeight = 16;
-            this.listBox2.Location = new System.Drawing.Point(141, 13);
-            this.listBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox2.Location = new System.Drawing.Point(107, 48);
             this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(293, 308);
+            this.listBox2.Size = new System.Drawing.Size(221, 251);
             this.listBox2.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(488, 9);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.35F);
+            this.label1.Location = new System.Drawing.Point(369, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(41, 15);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
             // 
             // listBox3
             // 
             this.listBox3.FormattingEnabled = true;
-            this.listBox3.ItemHeight = 16;
-            this.listBox3.Location = new System.Drawing.Point(477, 30);
-            this.listBox3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox3.Location = new System.Drawing.Point(357, 48);
             this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(191, 308);
+            this.listBox3.Size = new System.Drawing.Size(144, 251);
             this.listBox3.TabIndex = 4;
             this.listBox3.SelectedIndexChanged += new System.EventHandler(this.listBox3_SelectedIndexChanged);
             // 
             // listBox4
             // 
             this.listBox4.FormattingEnabled = true;
-            this.listBox4.ItemHeight = 16;
-            this.listBox4.Location = new System.Drawing.Point(693, 30);
-            this.listBox4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.listBox4.Location = new System.Drawing.Point(521, 48);
             this.listBox4.Name = "listBox4";
-            this.listBox4.Size = new System.Drawing.Size(191, 308);
+            this.listBox4.Size = new System.Drawing.Size(144, 251);
             this.listBox4.TabIndex = 5;
             // 
             // btnEdit
             // 
-            this.btnEdit.Location = new System.Drawing.Point(244, 420);
+            this.btnEdit.Location = new System.Drawing.Point(183, 328);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnEdit.Name = "btnEdit";
-            this.btnEdit.Size = new System.Drawing.Size(105, 60);
+            this.btnEdit.Size = new System.Drawing.Size(79, 49);
             this.btnEdit.TabIndex = 6;
             this.btnEdit.Text = "Edit";
             this.btnEdit.UseVisualStyleBackColor = true;
@@ -108,9 +101,10 @@ namespace Car_Dealer_v2._0
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(219, 611);
+            this.btnSave.Location = new System.Drawing.Point(164, 496);
+            this.btnSave.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(167, 60);
+            this.btnSave.Size = new System.Drawing.Size(125, 49);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -118,58 +112,66 @@ namespace Car_Dealer_v2._0
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(39, 511);
+            this.textBoxPrice.Location = new System.Drawing.Point(29, 415);
+            this.textBoxPrice.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxPrice.Name = "textBoxPrice";
-            this.textBoxPrice.Size = new System.Drawing.Size(154, 22);
+            this.textBoxPrice.Size = new System.Drawing.Size(116, 20);
             this.textBoxPrice.TabIndex = 8;
             // 
             // textBoxKm
             // 
-            this.textBoxKm.Location = new System.Drawing.Point(39, 558);
+            this.textBoxKm.Location = new System.Drawing.Point(29, 453);
+            this.textBoxKm.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxKm.Name = "textBoxKm";
-            this.textBoxKm.Size = new System.Drawing.Size(154, 22);
+            this.textBoxKm.Size = new System.Drawing.Size(116, 20);
             this.textBoxKm.TabIndex = 9;
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(81, 439);
+            this.textBoxId.Location = new System.Drawing.Point(61, 357);
+            this.textBoxId.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(112, 22);
+            this.textBoxId.Size = new System.Drawing.Size(85, 20);
             this.textBoxId.TabIndex = 10;
             // 
             // ID
             // 
             this.ID.AutoSize = true;
-            this.ID.Location = new System.Drawing.Point(13, 442);
-            this.ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.ID.Location = new System.Drawing.Point(10, 359);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(21, 17);
+            this.ID.Size = new System.Drawing.Size(18, 13);
             this.ID.TabIndex = 11;
             this.ID.Text = "ID";
             // 
-            // label2
+            // btnRemove
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(668, 420);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(26, 21);
-            this.label2.TabIndex = 12;
-            this.label2.Text = "ID";
+            this.btnRemove.Location = new System.Drawing.Point(183, 381);
+            this.btnRemove.Margin = new System.Windows.Forms.Padding(2);
+            this.btnRemove.Name = "btnRemove";
+            this.btnRemove.Size = new System.Drawing.Size(79, 49);
+            this.btnRemove.TabIndex = 14;
+            this.btnRemove.Text = "Remove";
+            this.btnRemove.UseVisualStyleBackColor = true;
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
-            // textBox1
+            // btnAdd
             // 
-            this.textBox1.Location = new System.Drawing.Point(756, 420);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
-            this.textBox1.TabIndex = 13;
+            this.btnAdd.Location = new System.Drawing.Point(183, 438);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(79, 49);
+            this.btnAdd.TabIndex = 15;
+            this.btnAdd.Text = "Add";
+            this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(866, 665);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
+            this.ClientSize = new System.Drawing.Size(777, 611);
+            this.Controls.Add(this.btnAdd);
+            this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.textBoxKm);
@@ -181,7 +183,6 @@ namespace Car_Dealer_v2._0
             this.Controls.Add(this.label1);
             this.Controls.Add(this.listBox2);
             this.Controls.Add(this.listBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -202,8 +203,8 @@ namespace Car_Dealer_v2._0
         private System.Windows.Forms.TextBox textBoxKm;
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.Label ID;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Button btnRemove;
+        private System.Windows.Forms.Button btnAdd;
     }
 }
 
