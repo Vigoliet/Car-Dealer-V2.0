@@ -54,8 +54,7 @@ namespace Car_Dealer_v2._0
 
             foreach (Car anka in Cars.OrderBy(x => x.Make)) //anka can be any variable name
             {
-                //listBox1.Items.Add($"{anka.Make} {anka.Model}"); from Car class
-                listBox1.Items.Add(anka);
+                listBox1.Items.Add(anka); //listBox1.Items.Add($"{anka.Make} {anka.Model}"); from Car class
             }
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) //event when we press an item in listbox1
@@ -69,12 +68,9 @@ namespace Car_Dealer_v2._0
 
             Car mySelectedCar = myListofCars.SelectedItem as Car;
 
-            //we make it on multiple rows to make it jump down,
-            //could also have put everything on the same row,
-            //with listBox2.Items.Add($"Make: {} {} {} {}"); 
-            listBox2.Items.Add($"Make: {mySelectedCar.Make}"); 
-            listBox2.Items.Add($"Color: {mySelectedCar.Color} ");
-            listBox2.Items.Add($"Price: {mySelectedCar.Price}Kr");
+            listBox2.Items.Add($"Make: {mySelectedCar.Make}");  //we make it on multiple rows to make it jump down,
+            listBox2.Items.Add($"Color: {mySelectedCar.Color} "); //could also have put everything on the same row,
+            listBox2.Items.Add($"Price: {mySelectedCar.Price}Kr");//with listBox2.Items.Add($"Make: {} {} {} {}");
             listBox2.Items.Add($"ID: {mySelectedCar.Id}");
         }
 
@@ -126,13 +122,30 @@ namespace Car_Dealer_v2._0
             }
             
         }
-        public int SelectedCar() //Used to declare what car the user wants removed.
+        public int SelectedCar() //Used to declare what car the user wants removed. public int idnummer() sortbyid + 1, return
         {
             return Cars.FindIndex(x => x.Id == int.Parse(textBoxId.Text));
         }
         private void btnAdd_Click(object sender, EventArgs e)
         {
 
+            Cars.Add(new Car()
+            {
+                Id = int.Parse(textBox1.Text),
+                Make = textBox2.Text,
+                Model = textBox3.Text,
+                Color = textBox4.Text,
+                Km = int.Parse(textBox5.Text),
+                Price = int.Parse(textBox6.Text),
+                Year = int.Parse(textBox7.Text)
+            });
+            listBox1.Items.Clear();
+
+            foreach (Car c in Cars.OrderBy(x => x.Make))
+            {
+                listBox1.Items.Add(c);
+            }
         }
+       
     }
 }
