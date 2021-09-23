@@ -8,3 +8,13 @@ C:\Uppgifter\Car Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.csproj.Ge
 C:\Uppgifter\Car Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.csproj.CoreCompileInputs.cache
 C:\Uppgifter\Car Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.exe
 C:\Uppgifter\Car Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.pdb
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\bin\Debug\Car Dealer v2.0.exe.config
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\bin\Debug\Car Dealer v2.0.exe
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\bin\Debug\Car Dealer v2.0.pdb
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.csproj.AssemblyReference.cache
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\obj\Debug\Car_Dealer_v2._0.Form1.resources
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\obj\Debug\Car_Dealer_v2._0.Properties.Resources.resources
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.csproj.GenerateResource.cache
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.csproj.CoreCompileInputs.cache
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.exe
+C:\Uppgifter\Car-Dealer v2.0\Car Dealer v2.0\obj\Debug\Car Dealer v2.0.pdb

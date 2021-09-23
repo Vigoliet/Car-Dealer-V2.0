@@ -91,5 +91,30 @@ namespace Car_Dealer_v2._0
                 listBox4.Items.Add($"{item}");
             }
         }
+
+        private void btnEdit_Click(object sender, EventArgs e) //Edit button works after puttin in a correct ID, give error if there's none
+        {
+            string SelectedIdTemp = textBoxId.Text;
+
+            int SelectedId = int.Parse(SelectedIdTemp);
+
+            var SelectedCarEdit = Cars.Find(x => x.Id == SelectedId);
+
+            textBoxPrice.Text = SelectedCarEdit.Price.ToString();
+            textBoxKm.Text = SelectedCarEdit.Km.ToString();
+        }
+
+        private void btnSave_Click(object sender, EventArgs e)
+        {
+           listBox2.Items.Clear();
+
+           var Price = Cars.Find(x => x.Id == int.Parse(textBoxId.Text)).Price = int.Parse(textBoxPrice.Text);
+
+           var Km = Cars.Find(x => x.Id == int.Parse(textBoxId.Text)).Km = int.Parse(textBoxKm.Text);
+
+            
+            listBox2.Items.Add($"New Price: {Price}");
+            listBox2.Items.Add($"New Km: {Km}");
+        }
     }
 }
