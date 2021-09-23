@@ -40,6 +40,8 @@ namespace Car_Dealer_v2._0
             this.textBoxKm = new System.Windows.Forms.TextBox();
             this.textBoxId = new System.Windows.Forms.TextBox();
             this.ID = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // listBox1
@@ -141,15 +143,33 @@ namespace Car_Dealer_v2._0
             this.ID.Location = new System.Drawing.Point(13, 442);
             this.ID.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.ID.Name = "ID";
-            this.ID.Size = new System.Drawing.Size(26, 21);
+            this.ID.Size = new System.Drawing.Size(21, 17);
             this.ID.TabIndex = 11;
             this.ID.Text = "ID";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(668, 420);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(26, 21);
+            this.label2.TabIndex = 12;
+            this.label2.Text = "ID";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(756, 420);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.TabIndex = 13;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1083, 832);
+            this.ClientSize = new System.Drawing.Size(866, 665);
+            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.label2);
             this.Controls.Add(this.ID);
             this.Controls.Add(this.textBoxId);
             this.Controls.Add(this.textBoxKm);
@@ -182,6 +202,8 @@ namespace Car_Dealer_v2._0
         private System.Windows.Forms.TextBox textBoxKm;
         private System.Windows.Forms.TextBox textBoxId;
         private System.Windows.Forms.Label ID;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }
 

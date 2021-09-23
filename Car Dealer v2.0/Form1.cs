@@ -106,13 +106,12 @@ namespace Car_Dealer_v2._0
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-           listBox2.Items.Clear();
+            listBox2.Items.Clear();
 
-           var Price = Cars.Find(x => x.Id == int.Parse(textBoxId.Text)).Price = int.Parse(textBoxPrice.Text);
+            var Price = Cars.Find(x => x.Id == int.Parse(textBoxId.Text)).Price = int.Parse(textBoxPrice.Text);
 
-           var Km = Cars.Find(x => x.Id == int.Parse(textBoxId.Text)).Km = int.Parse(textBoxKm.Text);
+            var Km = Cars.Find(x => x.Id == int.Parse(textBoxId.Text)).Km = int.Parse(textBoxKm.Text);
 
-            
             listBox2.Items.Add($"New Price: {Price}");
             listBox2.Items.Add($"New Km: {Km}");
         }
