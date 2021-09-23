@@ -42,6 +42,9 @@ namespace Car_Dealer_v2._0
             this.ID = new System.Windows.Forms.Label();
             this.btnRemove = new System.Windows.Forms.Button();
             this.btnAdd = new System.Windows.Forms.Button();
+            this.allcars = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBox1
@@ -67,9 +70,9 @@ namespace Car_Dealer_v2._0
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.35F);
             this.label1.Location = new System.Drawing.Point(369, 22);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(41, 15);
+            this.label1.Size = new System.Drawing.Size(42, 15);
             this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.label1.Text = "Colors";
             // 
             // listBox3
             // 
@@ -165,11 +168,44 @@ namespace Car_Dealer_v2._0
             this.btnAdd.UseVisualStyleBackColor = true;
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
+            // allcars
+            // 
+            this.allcars.AutoSize = true;
+            this.allcars.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.35F);
+            this.allcars.Location = new System.Drawing.Point(10, 22);
+            this.allcars.Name = "allcars";
+            this.allcars.Size = new System.Drawing.Size(48, 15);
+            this.allcars.TabIndex = 16;
+            this.allcars.Text = "All Cars";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.35F);
+            this.label3.Location = new System.Drawing.Point(116, 22);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(63, 15);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "Car Specs";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.35F);
+            this.label2.Location = new System.Drawing.Point(518, 22);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(105, 15);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Car with thar color";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 611);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.allcars);
             this.Controls.Add(this.btnAdd);
             this.Controls.Add(this.btnRemove);
             this.Controls.Add(this.ID);
@@ -205,6 +241,9 @@ namespace Car_Dealer_v2._0
         private System.Windows.Forms.Label ID;
         private System.Windows.Forms.Button btnRemove;
         private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label allcars;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
     }
 }
 
