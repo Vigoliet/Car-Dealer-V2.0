@@ -52,10 +52,7 @@ namespace Car_Dealer_v2._0
             }
             label1.Text = $"We offer {i} these colors:";
 
-            foreach (Car anka in Cars.OrderBy(x => x.Make)) //anka can be any variable name
-            {
-                listBox1.Items.Add(anka); //listBox1.Items.Add($"{anka.Make} {anka.Model}"); from Car class
-            }
+            NewMethod();
         }
         private void listBox1_SelectedIndexChanged(object sender, EventArgs e) //event when we press an item in listbox1
         {
@@ -140,12 +137,15 @@ namespace Car_Dealer_v2._0
                 Year = int.Parse(textBox7.Text)
             });
             listBox1.Items.Clear();
+            NewMethod();
+        }
 
-            foreach (Car c in Cars.OrderBy(x => x.Make))
+        private void NewMethod()
+        {
+            foreach (Car anka in Cars.OrderBy(x => x.Make))
             {
-                listBox1.Items.Add(c);
+                listBox1.Items.Add(anka);
             }
         }
-       
     }
 }

@@ -59,6 +59,8 @@ namespace Car_Dealer_v2._0
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // listBox1
@@ -118,10 +120,10 @@ namespace Car_Dealer_v2._0
             // 
             // btnSave
             // 
-            this.btnSave.Location = new System.Drawing.Point(164, 496);
+            this.btnSave.Location = new System.Drawing.Point(183, 438);
             this.btnSave.Margin = new System.Windows.Forms.Padding(2);
             this.btnSave.Name = "btnSave";
-            this.btnSave.Size = new System.Drawing.Size(125, 49);
+            this.btnSave.Size = new System.Drawing.Size(79, 49);
             this.btnSave.TabIndex = 7;
             this.btnSave.Text = "Save";
             this.btnSave.UseVisualStyleBackColor = true;
@@ -129,7 +131,7 @@ namespace Car_Dealer_v2._0
             // 
             // textBoxPrice
             // 
-            this.textBoxPrice.Location = new System.Drawing.Point(29, 415);
+            this.textBoxPrice.Location = new System.Drawing.Point(47, 410);
             this.textBoxPrice.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxPrice.Name = "textBoxPrice";
             this.textBoxPrice.Size = new System.Drawing.Size(116, 20);
@@ -137,7 +139,7 @@ namespace Car_Dealer_v2._0
             // 
             // textBoxKm
             // 
-            this.textBoxKm.Location = new System.Drawing.Point(29, 453);
+            this.textBoxKm.Location = new System.Drawing.Point(47, 458);
             this.textBoxKm.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxKm.Name = "textBoxKm";
             this.textBoxKm.Size = new System.Drawing.Size(116, 20);
@@ -145,10 +147,10 @@ namespace Car_Dealer_v2._0
             // 
             // textBoxId
             // 
-            this.textBoxId.Location = new System.Drawing.Point(61, 357);
+            this.textBoxId.Location = new System.Drawing.Point(47, 359);
             this.textBoxId.Margin = new System.Windows.Forms.Padding(2);
             this.textBoxId.Name = "textBoxId";
-            this.textBoxId.Size = new System.Drawing.Size(85, 20);
+            this.textBoxId.Size = new System.Drawing.Size(116, 20);
             this.textBoxId.TabIndex = 10;
             // 
             // ID
@@ -173,10 +175,10 @@ namespace Car_Dealer_v2._0
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(621, 473);
+            this.btnAdd.Location = new System.Drawing.Point(543, 468);
             this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(79, 49);
+            this.btnAdd.Size = new System.Drawing.Size(101, 63);
             this.btnAdd.TabIndex = 15;
             this.btnAdd.Text = "Add";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -214,7 +216,7 @@ namespace Car_Dealer_v2._0
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(487, 343);
+            this.textBox1.Location = new System.Drawing.Point(443, 346);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(85, 20);
@@ -223,7 +225,7 @@ namespace Car_Dealer_v2._0
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(429, 346);
+            this.label4.Location = new System.Drawing.Point(397, 346);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(18, 13);
             this.label4.TabIndex = 20;
@@ -331,11 +333,31 @@ namespace Car_Dealer_v2._0
             this.label10.TabIndex = 32;
             this.label10.Text = "Year";
             // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(1, 415);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(31, 13);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "Price";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 461);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(22, 13);
+            this.label12.TabIndex = 34;
+            this.label12.Text = "Km";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(777, 611);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -405,6 +427,8 @@ namespace Car_Dealer_v2._0
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label12;
     }
 }
 
